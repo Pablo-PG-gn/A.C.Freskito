@@ -6,6 +6,84 @@
     <title>Formulario</title>
 </head>
 <body>
-    
+    </head>
+<body>
+    <h1>Formulario de alta de futbolista</h1>
+    <form>
+        <table border="1" align="left">
+
+            <tr>
+                <td align="center" colspan="2"> 
+                <label for="Identificador_del_nuevo_jugador">Identificador del nuevo jugador </label>
+                <input type="text" id="Identificador_del_nuevo_jugador" name="Identificador_del_nuevo_jugador"></td>
+            </tr>
+            <tr>
+                <td><label for="Nombre">Nombre </label>
+                    <input type="text" id="Nombre" name="Nombre"></td>
+                <td><label for="id">Apellidos </label>
+                    <input type="text" id="Apellidos" name="Apellidos"></td>
+            </tr>
+            <tr>
+                <td><label for="Contraseña">Posición/es </label>
+                    <input type="password" id="Posición/es" name="Posición/es"></td>
+            </tr>
+            <tr>
+                <td colspan="2"> 
+                <label for="Equipo_anterior">Equipo anterior </label>
+                <input type="text" id="Equipo_anterior" name="Equipo_anterior" size="46"></td>
+            </tr>
+            <tr>
+                <td><label for="Sexo">Sexo </label></td>
+                <td><input type= "radio" name="Sexo" value="Hombre">Hombre
+                    <input type= "radio" name="Sexo" value="Mujer">Mujer</td>
+            </tr>
+            <tr>
+            <td label for="Equipo_preferido">Equipo preferido </label></td>
+            <td><input type= "checkbox" name="A1" value="Real_Betis">Real Betis<br>
+            <input type= "checkbox" name="A1" value="Real_Madrid">Real Madrid<br>
+            <input type= "checkbox" name="A1" value="Atletico_de_Madrid">Atletico de Madrid<br></td>
+            <input type= "checkbox" name="A1" value="Sevilla">Sevilla<br></td>
+            <input type= "checkbox" name="A1" value="F.C_Barcelona">F.C Barcelona<br></td>
+            <input type= "checkbox" name="A1" value="A.C_Freskito">A.C Freskito<br></td>
+            </tr>
+            <tr>
+                <td label for="País">País </label></td>
+                <td> <select name="País">
+                    <option>España</option>
+                    <option>Portugal</option>
+                    <option>Italia</option>
+                    <option>El Salvador</option>
+                    <option>Nicaragua</option>
+                    <option>Costa Rica</option>
+                    <option>Colombia</option></td>
+            </tr>
+            <tr>
+                <td label for="Colores_favoritos">Colores favoritos </label></td>
+                <td> <select multiple name="Colores_favoritos ">
+                    <option>Rojo</option>
+                    <option>Verde</option>
+                    <option>Azul</option></td>
+            </tr>
+            <tr>
+                <td label for="Subir_su_foto">Subir su foto </label></td>
+                <td><input type="file" id="Subir_su_foto" name="Subir_su_foto"></td>
+            </tr>
+            <tr>
+                <td label for="Comentarios_personales">Comentarios personales </label></td>
+                <td><textarea name="mensaje" rows="5" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td align="center"><input type="Reset" value="Resetear"></td>
+                <td align="center"><input type="Submit" value="Enviar"></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                <input type="button" disabled value="Modificar datos de usuario">
+                </td> 
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
 </body>
 </html>
