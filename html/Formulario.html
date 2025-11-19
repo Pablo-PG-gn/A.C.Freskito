@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
 </head>
-<body>
-    </head>
-<body>
-    <h1>Formulario de alta de futbolista</h1>
+<body bgcolor="skyblue">
+    <h1 align="center" style="font-size: 50px">¿Quieres ser un nuevo jugador frío?</h1>
     <form>
-        <table border="1" align="left">
+        <table border="1" align="center" bgcolor="white">
 
             <tr>
                 <td align="center" colspan="2"> 
@@ -24,8 +22,8 @@
                     <input type="text" id="Apellidos" name="Apellidos"></td>
             </tr>
             <tr>
-                <td><label for="Contraseña">Posición/es </label>
-                    <input type="password" id="Posición/es" name="Posición/es"></td>
+                <td><label for="Posición/es">Posición/es </label>
+                    <input type="Posición/es" id="Posición/es" name="Posición/es"></td>
             </tr>
             <tr>
                 <td colspan="2"> 
@@ -41,9 +39,9 @@
             <td label for="Equipo_preferido">Equipo preferido </label></td>
             <td><input type= "checkbox" name="A1" value="Real_Betis">Real Betis<br>
             <input type= "checkbox" name="A1" value="Real_Madrid">Real Madrid<br>
-            <input type= "checkbox" name="A1" value="Atletico_de_Madrid">Atletico de Madrid<br></td>
-            <input type= "checkbox" name="A1" value="Sevilla">Sevilla<br></td>
-            <input type= "checkbox" name="A1" value="F.C_Barcelona">F.C Barcelona<br></td>
+            <input type= "checkbox" name="A1" value="Atletico_de_Madrid">Atletico de Madrid<br>
+            <input type= "checkbox" name="A1" value="Sevilla">Sevilla<br>
+            <input type= "checkbox" name="A1" value="F.C_Barcelona">F.C Barcelona<br>
             <input type= "checkbox" name="A1" value="A.C_Freskito">A.C Freskito<br></td>
             </tr>
             <tr>
@@ -58,15 +56,66 @@
                     <option>Colombia</option></td>
             </tr>
             <tr>
-                <td label for="Colores_favoritos">Colores favoritos </label></td>
-                <td> <select multiple name="Colores_favoritos ">
-                    <option>Rojo</option>
-                    <option>Verde</option>
-                    <option>Azul</option></td>
+                <td label for="Comentarios_personales">Comentarios personales </label></td>
+                <td><textarea name="mensaje" rows="5" cols="50"></textarea></td>
             </tr>
             <tr>
-                <td label for="Subir_su_foto">Subir su foto </label></td>
-                <td><input type="file" id="Subir_su_foto" name="Subir_su_foto"></td>
+                <td align="center"><input type="Reset" value="Resetear"></td>
+                <td align="center"><input type="Submit" value="Enviar"></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                <input type="button" disabled value="Modificar datos de nuevo jugador">
+                </td> 
+            </tr>
+        </table>
+    </form>
+    <h1 align="center" style="font-size: 50px">¿Prefieres ser un copito de nieve que nos de fuerzas?</h1>
+    <form>
+        <table border="1" align="center" bgcolor="white">
+
+            <tr>
+                <td align="center" colspan="2"> 
+                <label for="Identificador_del_nuevo_socio">Identificador del nuevo socio </label>
+                <input type="text" id="Identificador_del_nuevo_socio" name="Identificador_del_nuevo_socio"></td>
+            </tr>
+            <tr>
+                <td><label for="Nombre">Nombre </label>
+                    <input type="text" id="Nombre" name="Nombre"></td>
+                <td><label for="id">Apellidos </label>
+                    <input type="text" id="Apellidos" name="Apellidos"></td>
+            </tr>
+            <tr>
+                <td><label for="Aficionado">Aficionado </label></td>
+                <td><input type= "radio" name="Aficionado" value="Grada_de_animación">Grada de animación
+                    <input type= "radio" name="Aficionado" value="Grada_normal">Grada normal</td>
+            </tr>
+            <tr>
+                <td><label for="Sexo">Sexo </label></td>
+                <td><input type= "radio" name="Sexo" value="Hombre">Hombre
+                    <input type= "radio" name="Sexo" value="Mujer">Mujer</td>
+            </tr>
+            <tr>
+                <td label for="País">País </label></td>
+                <td> <select name="País">
+                    <option>España</option>
+                    <option>Portugal</option>
+                    <option>Italia</option>
+                    <option>El Salvador</option>
+                    <option>Nicaragua</option>
+                    <option>Costa Rica</option>
+                    <option>Colombia</option></td>
+            </tr>
+            <tr>
+                <td label for="Jugador_favorito">Jugador favorito</label></td>
+                <td><select multiple name="Jugador_favorito">
+                    <option>Pablo</option>
+                    <option>Santi</option>
+                    <option>Josue</option>
+                    <option>Jesús</option>
+                    <option>Felipe</option>
+                    <option>Carlos</option>
+                    <option>Yerbes</option></td>
             </tr>
             <tr>
                 <td label for="Comentarios_personales">Comentarios personales </label></td>
@@ -78,12 +127,10 @@
             </tr>
             <tr>
                 <td align="center" colspan="2">
-                <input type="button" disabled value="Modificar datos de usuario">
+                <input type="button" disabled value="Modificar datos de nuevo socio">
                 </td> 
             </tr>
         </table>
     </form>
-</body>
-</html>
 </body>
 </html>
