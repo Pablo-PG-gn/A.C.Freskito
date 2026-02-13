@@ -4,3 +4,10 @@ footer {
 nav {
     text-align: center;
 }
+
+/* Responsive */
+@media (max-width:768px) {
+    .movil {
+        flex-direction: colum;
+    }
+}
