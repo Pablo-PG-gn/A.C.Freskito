@@ -6,13 +6,24 @@ h1 {
 
 h2 {
     text-align: center;
-    color: aliceblue;
+    color: rgb(113, 174, 248);
     text-decoration: underline;
 }
 
 p {
-   text-align: center;
-    size: 50px; 
+    text-align: center;
+    size: 50px;
+    color: darkblue; 
+}
+.tachado {
+    text-decoration: line-through;
+} 
+.cursiva {
+    font-style: italic;
+}
+
+summary {
+   color: darkblue;
 }
 
 body {
@@ -34,13 +45,12 @@ article {
 
 figure {
     text-align: center;
+    width: 25%;
+    height: 25%;
+    border: 0;
 }
 
 footer {
-    text-align: center;
-}
-
-nav {
     text-align: center;
 }
 
@@ -71,3 +81,42 @@ main {
     gap: 20px;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "contenido"
+    "footer";
+}
+header {
+    grid-area: header;
+    background: rgb(47, 156, 251);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    grid-area: nav;
+    background: rgb(103, 184, 254);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+nav a {
+    color: rgb(8, 40, 53);
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
