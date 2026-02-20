@@ -11,3 +11,23 @@ nav {
         flex-direction: colum;
     }
 }
+
+body {
+    color: skyblue;
+}
+
+h1 {
+    text-align: center;
+    size: 100px;
+    color:rgb(50, 84, 177)
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(76, 154, 237);
+}
+
+footer {
+    text-align: center;
+}
