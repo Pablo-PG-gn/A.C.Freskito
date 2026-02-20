@@ -1,3 +1,15 @@
+footer {
+    text-align: center;
+}
+nav {
+    text-align: center;
+}
+/* Responsive */
+@media (max-width:768px) {
+    .movil {
+        flex-direction: colum;
+    }
+}
 .galeria {
     display: flex;
     flex-wrap: wrap;

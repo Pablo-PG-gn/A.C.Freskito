@@ -7,260 +7,177 @@
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/estilo-formulario.css">
 </head>
-<body bgcolor="skyblue">
-    <header>
-    <h1 align="center" style="font-size: 50px">¿Quieres ser un nuevo jugador frío?</h1>
-    </header>
-    <form>
-        <table border="1" align="center" bgcolor="white">
-
-            <tr>
-                <td align="center" colspan="2"> 
-                <label for="Identificador_del_nuevo_jugador">Identificador del nuevo jugador </label>
-                <input type="text" id="Identificador_del_nuevo_jugador" name="Identificador_del_nuevo_jugador" required placeholder="Pablo Agudo García"></td>
-            </tr>
-            <tr>
-                <td><label for="Nombre">Nombre </label>
-                    <input type="text" id="Nombre" name="Nombre" placeholder="Santiago"></td>
-                <td><label for="id">Apellidos </label>
-                    <input type="text" id="Apellidos" name="Apellidos" required placeholder="Perea"></td>
-            </tr>
-            <tr>
-                <td><label for="Posición/es">Posición/es </label>
-                    <input type="Posición/es" id="Posición/es" name="Posición/es" required placeholder="Central"></td>
-            </tr>
-            <tr>
-                <td colspan="2"> 
-                <label for="Equipo_anterior">Equipo anterior </label>
-                <input type="text" id="Equipo_anterior" name="Equipo_anterior" size="46" placeholder="La Rociera"></td>
-            </tr>
-            <tr>
-                <td><label for="Sexo">Sexo </label></td>
-                <td><input type= "radio" name="Sexo" value="Hombre" required>Hombre
-                    <input type= "radio" name="Sexo" value="Mujer" required>Mujer</td>
-            </tr>
-            <tr>
-            <td label for="Equipo_preferido">Equipo preferido </label></td>
-            <td><input type= "checkbox" name="A1" value="Real_Betis">Real Betis<br>
-            <input type= "checkbox" name="A1" value="Real_Madrid">Real Madrid<br>
-            <input type= "checkbox" name="A1" value="Atletico_de_Madrid">Atletico de Madrid<br>
-            <input type= "checkbox" name="A1" value="Sevilla">Sevilla<br>
-            <input type= "checkbox" name="A1" value="F.C_Barcelona">F.C Barcelona<br>
-            <input type= "checkbox" name="A1" value="A.C_Freskito">A.C Freskito<br></td>
-            </tr>
-            <tr>
-                <td label for="País">País </label></td>
-                <td> <select name="País">
-                    <option>España</option>
-                    <option>Portugal</option>
-                    <option>Italia</option>
-                    <option>El Salvador</option>
-                    <option>Nicaragua</option>
-                    <option>Costa Rica</option>
-                    <option>Colombia</option></td>
-            </tr>
-            <tr>
-                <td label for="Comentarios_personales">Comentarios personales </label></td>
-                <td><textarea name="mensaje" rows="5" cols="50"></textarea></td>
-            </tr>
-            <tr>
-                <td align="center"><input type="Reset" value="Resetear"></td>
-                <td align="center"><input type="Submit" value="Enviar"></td>
-            </tr>
-            <tr>
-                <td align="center" colspan="2">
-                <input type="button" disabled value="Modificar datos de nuevo jugador">
-                </td> 
-            </tr>
-        </table>
-    </form>
-    <h1 align="center" style="font-size: 50px">¿Prefieres ser un copito de nieve que nos de fuerzas?</h1>
-    <form>
-        <table border="1" align="center" bgcolor="white">
-
-            <tr>
-                <td align="center" colspan="2"> 
-                <label for="Identificador_de_socio">Identificador de socio </label>
-                <input type="text" id="Identificador_de_socio" name="Identificador_de_socio" pattern="[0-9]{5}" placeholder="12345" min="1" maxlength="5"></td>
-            </tr>
-            <tr>
-                <td><label for="Nombre">Nombre </label>
-                    <input type="text" id="Nombre" name="Nombre" placeholder="Pablo"></td>
-                <td><label for="id">Apellidos </label>
-                    <input type="text" id="Apellidos" name="Apellidos" placeholder="Agudo"></td>
-            </tr>
-            <tr>
-                <td><label for="Aficionado">Aficionado </label></td>
-                <td><input type= "radio" name="Aficionado" value="Grada_de_animación">Grada de animación
-                    <input type= "radio" name="Aficionado" value="Grada_normal">Grada normal</td>
-            </tr>
-            <tr>
-                <td><label for="Sexo">Sexo </label></td>
-                <td><input type= "radio" name="Sexo" value="Hombre">Hombre
-                    <input type= "radio" name="Sexo" value="Mujer">Mujer</td>
-            </tr>
-            <tr>
-                <td label for="País">País </label></td>
-                <td> <select name="País">
-                    <option>España</option>
-                    <option>Portugal</option>
-                    <option>Italia</option>
-                    <option>El Salvador</option>
-                    <option>Nicaragua</option>
-                    <option>Costa Rica</option>
-                    <option>Colombia</option></td>
-            </tr>
-            <tr>
-                <td label for="Jugador_favorito">Jugador favorito</label></td>
-                <td><select multiple name="Jugador_favorito">
-                    <option>Pablo</option>
-                    <option>Santi</option>
-                    <option>Josue</option>
-                    <option>Jesús</option>
-                    <option>Felipe</option>
-                    <option>Carlos</option>
-                    <option>Yerbes</option></td>
-            </tr>
-            <tr>
-                <td label for="Comentarios_personales">Comentarios personales </label></td>
-                <td><textarea name="mensaje" rows="5" cols="50" maxlength="150"></textarea></td>
-            </tr>
-            <tr>
-                <td align="center"><input type="Reset" value="Resetear"></td>
-                <td align="center"><input type="Submit" value="Enviar"></td>
-            </tr>
-            <tr>
-                <td align="center" colspan="2">
-                <input type="button" disabled value="Modificar datos de nuevo socio">
-                </td> 
-            </tr>
-        </table>
-    </form>
-    <nav>
-    <a href="../index.html">Volver a la página principal</a>
-    </nav>
-    <footer align="center">
-        <p>Página creada por Pablo Perea García y Santiago Agudo Lobato</p>
-    </footer>
-
-
-
-
+<body>
+<br>
+<div class="movil">
+<main>
 <form>
   <fieldset>
-    <legend>Legend</legend>
-    <div class="row">
-      <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-      <div class="col-sm-10">
-        <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="email@example.com">
-      </div>
+    <legend>¿QUIERES SER UN NUEVO JUGADOR FRÍO?</legend>
+    <div>
+      <label for="exampleInputEmail1" class="form-label mt-4">Nombre y apellidos</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Pablo Agudo García">
+      <small id="emailHelp" class="form-text text-muted"></small>
     </div>
     <div>
-      <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <label for="exampleInputEmail2" class="form-label mt-4">Posicion/es</label>
+      <input type="text" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Delantero centro">
+      <small id="emailHelp1" class="form-text text-muted">No importa si eres Messi o el peor jugador del mundo.</small>
     </div>
     <div>
-      <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" autocomplete="off">
+      <label for="exampleInputPassword1" class="form-label mt-4">Equipo/s anterior/es</label>
+      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="La Rociera">
     </div>
     <div>
-      <label for="exampleSelect1" class="form-label mt-4">Example select</label>
+      <label for="exampleSelect1" class="form-label mt-4">Equipo/s preferido/s</label>
       <select class="form-select" id="exampleSelect1">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
+        <option>A.C. Freskito</option>
+        <option>Real Betis Balompie</option>
+        <option>Real Madrid</option>
+        <option>F.C Barcelona</option>
+        <option>Sevilla F.C.</option>
       </select>
     </div>
     <div>
-      <label for="exampleSelect1" class="form-label mt-4">Example disabled select</label>
-      <select class="form-select" id="exampleDisabledSelect1" disabled="">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
-    </div>
-    <div>
-      <label for="exampleSelect2" class="form-label mt-4">Example multiple select</label>
+      <label for="exampleSelect2" class="form-label mt-4">Nacionalidad/es</label>
       <select multiple="" class="form-select" id="exampleSelect2">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
+        <option>España</option>
+        <option>Alemania</option>
+        <option>Francia</option>
+        <option>El Salvador</option>
+        <option>Nicaragua</option>
+        <option>Brasil</option>
+        <option>Argentina</option>
       </select>
     </div>
     <div>
-      <label for="exampleTextarea" class="form-label mt-4">Example textarea</label>
+      <label for="exampleTextarea" class="form-label mt-4">Cuentanos tus fortalezas</label>
       <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
     </div>
     <div>
-      <label for="formFile" class="form-label mt-4">Default file input example</label>
+      <label for="formFile" class="form-label mt-4">¿Quieres que te veamos jugando? ¡Añade un video!</label>
       <input class="form-control" type="file" id="formFile">
     </div>
     <fieldset>
-      <legend class="mt-4">Radio buttons</legend>
+      <legend class="mt-4">Sexo</legend>
       <div class="form-check">
         <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
         <label class="form-check-label" for="optionsRadios1">
-          Option one is this and that—be sure to include why it's great
+          Hombre
         </label>
       </div>
       <div class="form-check">
         <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
         <label class="form-check-label" for="optionsRadios2">
-          Option two can be something else and selecting it will deselect option one
-        </label>
-      </div>
-      <div class="form-check disabled">
-        <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
-        <label class="form-check-label" for="optionsRadios3">
-          Option three is disabled
+          Mujer
         </label>
       </div>
     </fieldset>
     <fieldset>
-      <legend class="mt-4">Checkboxes</legend>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-          Default checkbox
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
-        <label class="form-check-label" for="flexCheckChecked">
-          Checked checkbox
-        </label>
-      </div>
-    </fieldset>
-    <fieldset>
-      <legend class="mt-4">Switches</legend>
+      <legend class="mt-4">Disponibilidad para jugar</legend>
       <div class="form-check form-switch">
         <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-        <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+        <label class="form-check-label" for="flexSwitchCheckDefault">En perfecto estado</label>
       </div>
       <div class="form-check form-switch">
         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked="">
-        <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+        <label class="form-check-label" for="flexSwitchCheckChecked">Con molestias o una pequeña lesión (menos de 1 mes)</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked2" checked="">
+        <label class="form-check-label" for="flexSwitchCheckChecked">Con una lesión grave (más de 1 mes)</label>
       </div>
     </fieldset>
-    <fieldset>
-      <legend class="mt-4">Ranges</legend>
-        <label for="customRange1" class="form-label">Example range</label>
-        <input type="range" class="form-range" id="customRange1">
-        <label for="disabledRange" class="form-label">Disabled range</label>
-        <input type="range" class="form-range" id="disabledRange" disabled="">
-        <label for="customRange3" class="form-label">Example range</label>
-        <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
-    </fieldset>
+    <br>
     <button type="submit" class="btn btn-primary">Submit</button>
   </fieldset>
 </form>
-
+<br>
+<form>
+  <fieldset>
+    <legend>¿O PREFIERES SER UN NUEVO COPO DE NIEVE?</legend>
+    <div>
+      <label for="exampleInputEmail3" class="form-label mt-4">Número de socio</label>
+      <input type="text" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp" placeholder="46.329">
+      <small id="emailHelp3" class="form-text text-muted">No importa si eres el 1 o el 100.000</small>
+    </div>
+    <div>
+      <label for="exampleInputEmail90" class="form-label mt-4">Nombre y apellidos</label>
+      <input type="text" class="form-control" id="exampleInputEmail90" aria-describedby="emailHelp" placeholder="Santiago Perea Lobato">
+      <small id="emailHelp4" class="form-text text-muted"></small>
+    </div>
+    <div>
+      <label for="exampleSelectequipo" class="form-label mt-4">Equipo/s preferido/s</label>
+      <select class="form-select" id="exampleSelectequipo">
+        <option>A.C. Freskito</option>
+        <option>Real Betis Balompie</option>
+        <option>Real Madrid</option>
+        <option>F.C Barcelona</option>
+        <option>Sevilla F.C.</option>
+      </select>
+    </div>
+    <div>
+      <label for="exampleSelectpais" class="form-label mt-4">Nacionalidad/es</label>
+      <select multiple="" class="form-select" id="exampleSelectpais">
+        <option>España</option>
+        <option>Alemania</option>
+        <option>Francia</option>
+        <option>El Salvador</option>
+        <option>Nicaragua</option>
+        <option>Brasil</option>
+        <option>Argentina</option>
+      </select>
+    </div>
+    <div>
+      <label for="exampleTextareadudas" class="form-label mt-4">Cuentanos tus dudas</label>
+      <textarea class="form-control" id="exampleTextareadudas" rows="3"></textarea>
+    </div>
+    <div>
+      <label for="formFilefotos" class="form-label mt-4">¿Tiene fotos del equipo? ¡Dejanos verlas!</label>
+      <input class="form-control" type="file" id="formFilefotos">
+    </div>
+    <fieldset>
+      <legend class="mt-4">Sexo</legend>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadioshombre" value="option1" checked="">
+        <label class="form-check-label" for="optionsRadioshombre">
+          Hombre
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadiosmujer" value="option2">
+        <label class="form-check-label" for="optionsRadiosmujer">
+          Mujer
+        </label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend class="mt-4">Grada de...</legend>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefaultgrada">
+        <label class="form-check-label" for="flexSwitchCheckDefaultgrada">Grada de animación</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedrada" checked="">
+        <label class="form-check-label" for="flexSwitchCheckCheckedrada">Grada normal</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedada" checked="">
+        <label class="form-check-label" for="flexSwitchCheckCheckedada">Grada de preferencia</label>
+      </div>
+    </fieldset>
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+</main>
+</div>
+<br>
+    <nav>
+    <a href="../index.html">Volver a la página principal</a>
+    </nav>
+    <footer>
+        <p>Página creada por Pablo Perea García y Santiago Agudo Lobato</p>
+    </footer>
 </body>
 </html>
